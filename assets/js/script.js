@@ -26,6 +26,11 @@ function generatePassword() {
     var charSet = "";
     var password = "";
 
+    if ((confirmLower === false) && (confirmUpper === false) && (confirmNumber === false) && (confirmSpecial === false)) {
+      alert("Please choose at least one character type");
+      return ("Your Secure Password");
+    }
+
     if (confirmLower === true) {
       charSet += lowerCase ;
     }
@@ -45,11 +50,10 @@ function generatePassword() {
     return (password);
   }
     else {
-      window.alert("Please enter a number between 8-128");
+     alert("Please enter a number between 8-128");
 
-      return;
+      return ("Your Secure Password");
     }
-
 }
 
 
