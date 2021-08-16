@@ -25,12 +25,12 @@ function generatePassword() {
     
     var charSet = "";
     var password = "";
-
+    // makes sure a character type is selected
     if ((confirmLower === false) && (confirmUpper === false) && (confirmNumber === false) && (confirmSpecial === false)) {
       alert("Please choose at least one character type");
       return ("Your Secure Password");
     }
-
+    // adds characters to charset 
     if (confirmLower === true) {
       charSet += lowerCase ;
     }
@@ -43,7 +43,7 @@ function generatePassword() {
     if (confirmSpecial === true) {
       charSet += special ;
     }
-
+    // loops through the charset at random to create a password with included characters
     for (var i = 0; i < length; i++) {
       password += charSet.charAt(Math.floor(Math.random() * charSet.length));
     }
