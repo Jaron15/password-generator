@@ -19,4 +19,8 @@ A loop is then ran to pull characters from the created charSet based on the user
 
 I also created if statements that make sure that the user chooses a password length of 8-128 and has at least one characer type selected. If this is not the case, the user will be alerted why their password is not generated and the value that is returned to the text area is "Your Secure Password" (to match the placholder text).
 
+## References 
+Link to active page: https://jaron15.github.io/password-generator/
+
+Link to repository: https://github.com/Jaron15/password-generator.git
 
